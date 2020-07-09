@@ -1,0 +1,461 @@
+/* ###################
+  General CSS
+####################*/
+
+html {
+  background-color: #f1f5f8;
+}
+body {
+  margin: 0;
+}
+@font-face {
+  font-family: "Heebo";
+  font-weight: normal;
+  src: url("/src/fonts/Heebo-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Heebo";
+  font-weight: bold;
+  src: url("/src/fonts/Heebo-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Monserrat";
+  font-weight: bold;
+  src: url("/src/fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+/* ###################
+  Header CSS
+####################*/
+
+header {
+  display: flex;
+  background-color: #00d3c3;
+  width: 100%;
+  height: 350px;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto 50px 70px;
+  max-width: 330px;
+}
+
+.header-content .logo img {
+  height: 28px;
+}
+
+.header-content-text {
+  margin-top: auto;
+  color: #fff;
+}
+
+.header-content-text h1 {
+  font-family: Monserrat;
+  font-weight: bold;
+  margin: 0;
+}
+
+.header-content-text p {
+  font-family: Heebo;
+  font-weight: normal;
+  font-size: 0.8em;
+  margin: 15px 0 25px 0;
+}
+
+.header-button-decouvrir {
+  height: 50px;
+  width: 200px;
+  cursor: pointer;
+  font-family: Monserrat;
+  font-weight: bold;
+  background-color: transparent;
+  color: #fff;
+  justify-content: center;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  transition: all 0.3s ease-out;
+}
+
+.header-button-decouvrir:hover {
+  background-color: #fff;
+  color: #00d3c3;
+}
+
+/* ###################
+  Container CSS
+####################*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: -268px 70px 0 70px;
+  /* justify-content: center ;*/
+  /* Possiblement la meilleure option ici pour les plus grands écrans, mais n'est pas suggéré par la maquette -> Pour la section inférieure du container
+  (Après réduction de la taille de certains éléments) */
+}
+
+.section-title {
+  font-family: Monserrat;
+  font-weight: bold;
+  color: #cc98e0;
+  margin: 0;
+}
+
+.booking {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 280px;
+  align-self: flex-end;
+  margin-bottom: 30px;
+  padding: 22px 30px 30px 30px;
+  box-shadow: 6px 4px 18px rgba(0, 0, 0, 0.13);
+  border-radius: 8px;
+}
+.booking form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+.booking form input {
+  font-family: Heebo;
+  font-weight: normal;
+  height: 22px;
+  margin-bottom: 10px;
+  padding: 3px 10px;
+  color: #111111;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 3px;
+}
+.booking form input::placeholder {
+  color: #1111116e;
+}
+.form-group {
+  display: flex;
+  align-items: center;
+  margin: 5px 0 10px 0;
+}
+.form-label {
+  display: flex;
+  flex: 1;
+}
+.input-with-label {
+  display: flex;
+  flex: 4;
+}
+.form-group label {
+  font-family: Heebo;
+  font-weight: bold;
+  font-size: 0.7em;
+  color: #111111;
+}
+.form-group span {
+  border-radius: 3px 0px 0px 3px;
+  background-color: rgb(221, 221, 221);
+  height: 30px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-group span img {
+  height: 14px;
+}
+.booking form .form-group input {
+  width: 100%;
+  border-radius: 0px 3px 3px 0px;
+  margin-bottom: 0;
+}
+.time-slot {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: Heebo;
+  font-weight: normal;
+  font-size: 0.7em;
+  color: rgb(171, 171, 171);
+  height: 28px;
+  margin: 0 2px;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 3px;
+}
+.time-slot:first-child {
+  margin: 0 2px 0 0;
+}
+.time-slot:last-child {
+  margin: 0 0 0 2px;
+}
+.active {
+  border: 1px solid #cc98e0;
+  background-color: #cc98e0;
+  color: #fff;
+}
+.booking form select {
+  font-family: Heebo;
+  font-weight: normal;
+  color: #111111;
+  height: 40px;
+  padding: 0 10px;
+  margin: 8px 0 24px 0;
+  border-radius: 3px;
+}
+.validate-form {
+  height: 40px;
+  border: none;
+  background-color: #cc98e0;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: Monserrat;
+  font-weight: bold;
+  border-radius: 3px;
+  transition: all 0.3s ease-out;
+}
+.validate-form:hover {
+  background-color: #fff;
+  color: #cc98e0;
+  border: 1px solid #cc98e0;
+}
+
+.infos {
+  display: flex;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.pictures {
+  display: flex;
+  flex: 1;
+  z-index: 50;
+}
+.icone {
+  margin: 65px -24px 0 0;
+  z-index: 51;
+}
+.icone img {
+  height: 26px;
+}
+
+.visuel {
+  height: 370px;
+  flex: 1;
+  min-width: 400px;
+  box-shadow: 6px 4px 18px rgba(0, 0, 0, 0.13);
+  border-radius: 8px;
+}
+.visuel img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 70px 0 0 -40px;
+  padding: 40px 30px 40px 90px;
+  background-color: #fff;
+  box-shadow: 6px 4px 18px rgba(0, 0, 0, 0.13);
+  border-radius: 8px;
+}
+.schedule .section-title {
+  margin: 10px 0 35px 0;
+}
+.schedule .section-title img {
+  margin-right: 7px;
+  height: 0.68em;
+}
+.schedule-grid {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.grid-item {
+  margin-bottom: 10px;
+}
+.grid-item p {
+  margin: 0;
+  font-family: Heebo;
+  font-weight: normal;
+  color: #111111;
+  font-size: 0.7em;
+}
+.grid-item .grid-item-title {
+  font-family: Monserrat;
+  font-weight: bold;
+  color: #00d3c3;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.closed-sunday {
+  font-family: Heebo;
+  font-weight: normal;
+  color: rgb(144, 144, 144);
+  font-size: 0.75em;
+}
+
+/* ###################
+  Footer CSS
+####################*/
+
+footer {
+  display: flex;
+  background-color: #00d3c3;
+  padding: 30px 100px;
+  justify-content: space-between;
+}
+
+footer p {
+  font-family: Heebo;
+  font-weight: normal;
+  color: #fff;
+  font-size: 0.75em;
+}
+
+footer p,
+footer a {
+  margin: 3px 0;
+}
+
+.title-col {
+  font-family: Monserrat;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+}
+.footer-link {
+  text-decoration: none;
+}
+
+.social-medias {
+  display: flex;
+  justify-content: flex-end;
+}
+.social-media-item {
+  margin: 5px 0 0 20px;
+}
+.social-media-item img {
+  height: 1em;
+}
+
+/* ###################
+  Responsive CSS
+####################*/
+
+@media screen and (max-width: 992px) {
+  /* ###################
+    Mobile Header CSS
+  ####################*/
+  .logo,
+  .booking {
+    align-self: center;
+  }
+
+  .container {
+    justify-content: center;
+  }
+
+  .section-title,
+  .grid-item,
+  .closed-sunday,
+  .header-content-text {
+    text-align: center;
+  }
+
+  header {
+    height: auto;
+  }
+  .logo {
+    margin-bottom: 70px;
+  }
+  .header-content {
+    margin: 40px 70px 275px 70px;
+    width: 100%;
+    max-width: none;
+    justify-content: center;
+  }
+
+  .container {
+    margin: -205px 16px 0 16px;
+  }
+
+  .infos {
+    flex-direction: column;
+  }
+  .pictures {
+    justify-content: center;
+  }
+  .visuel {
+    height: 250px;
+    width: calc(60vw + 100px);
+    flex: none;
+    min-width: unset;
+  }
+  .schedule {
+    margin: -20px 0 0 0;
+    padding: 40px 30px;
+  }
+}
+@media (max-width: 576px) {
+  .booking {
+    width: calc(84vw - 32px);
+    border-radius: 12px;
+  }
+
+  .visuel {
+    height: 200px;
+    width: calc(90vw - 32px);
+  }
+  .visuel img {
+    border-radius: 12px;
+  }
+
+  .schedule {
+    margin: -20px 30px 0 10px;
+    border-radius: 12px;
+  }
+  .schedule-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-links {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .social-medias {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .social-media-item {
+    margin: 5px 10px 0 10px;
+  }
+}

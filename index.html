@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+  <title>APPN Test</title>
+  <link href="/css/style.css" rel="stylesheet">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <img src="/src/images/logo.png" alt="Logo de la marque" class="logo-picture">
+      </div>
+      <div class="header-content-text">
+        <h1 class="main-title">Lorem ipsum dolor</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+        <button class="header-button-decouvrir">Découvrir</button>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="booking">
+      <h2 class="section-title">Réserver</h2>
+      <form>
+        <input type="text" name="lastName" id="lastName" placeholder="Nom" required>
+        <input type="text" name="firstName" id="firstName" placeholder="Prénom" required>
+        <input type="text" name="email" id="email" placeholder="Email" required>
+        <div class="form-group">
+          <div class="form-label"><label for="date">Date</label></div>
+          <div class="input-with-label">
+            <span><img src="/src/images/calendar.png" alt="Calendrier"></span><input type="text" name="date" id="date"
+              placeholder="JJ/MM/AAAA" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-label"><label for="schedule">Horaire</label></div>
+          <div class="input-with-label">
+            <div class="time-slot">12:00</div>
+            <div class="time-slot active">13:00</div>
+            <div class="time-slot">14:00</div>
+            <div class="time-slot">15:00</div>
+          </div>
+        </div>
+        <select name="number" id="number">
+          <option value="1">1 personne</option>
+          <option value="2" selected>2 personnes</option>
+          <option value="3">3 personnes</option>
+          <option value="4">4 personnes</option>
+          <option value="5">5 personnes</option>
+          <option value="6">6 personnes</option>
+        </select>
+        <button class="validate-form" type="submit">Valider</button>
+      </form>
+    </div>
+    <div class="infos">
+      <div class="pictures">
+        <div class="icone"><img src="/src/images/icone.png" alt="Icone constituée de quatre barres horizontales mauves">
+        </div>
+        <div class="visuel"><img src="/src/images/visuel.png" alt="Photo du restaurant"></div>
+      </div>
+      <div class="schedule">
+        <h2 class="section-title"><img src="/src/images/clock.png" alt="Icone d'horloge">Horaires d'ouverture</h2>
+        <div class="schedule-grid">
+          <div class="grid-item">
+            <p class="grid-item-title">Lun</p>
+            <p>11h45-14h15</p>
+            <p>18h30-22h30</p>
+          </div>
+          <div class="grid-item">
+            <p class="grid-item-title">Mar</p>
+            <p>11h45-14h15</p>
+            <p>18h30-22h30</p>
+          </div>
+          <div class="grid-item">
+            <p class="grid-item-title">Mer</p>
+            <p>11h45-14h15</p>
+            <p>18h30-22h30</p>
+          </div>
+          <div class="grid-item">
+            <p class="grid-item-title">Jeu</p>
+            <p>11h45-14h15</p>
+            <p>18h30-22h30</p>
+          </div>
+          <div class="grid-item">
+            <p class="grid-item-title">Ven</p>
+            <p>11h45-14h15</p>
+            <p>18h30-22h30</p>
+          </div>
+          <div class="grid-item">
+            <p class="grid-item-title">Sam</p>
+            <p>11h45-14h15</p>
+            <p>18h30-22h30</p>
+          </div>
+        </div>
+        <p class="closed-sunday">Fermé le dimanche.</p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-contact">
+      <p class="title-col">Contact</p>
+      <p>(+33) 1 88 32 56 46</p>
+      <p>contact@gmail.com</p>
+    </div>
+    <div class="footer-links">
+      <a href="#" class="title-col footer-link">Mentions Légales</a>
+      <a href="#" class="title-col footer-link">Crédits</a>
+      <div class="social-medias">
+        <div class="social-media-item"><a href="#"><img src="/src/images/twitter.png"
+              alt="Logo du réseau social Twitter"></a></div>
+        <div class="social-media-item"><a href="#"><img src="/src/images/facebook.png"
+              alt="Logo du réseau social Facebook"></a></div>
+        <div class="social-media-item"><a href="#"><img src="/src/images/instagram.png"
+              alt="Logo du réseau social Instagram"></a></div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
